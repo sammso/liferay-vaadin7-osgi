@@ -1,0 +1,22 @@
+Liferay 7 / Vaadin 7.5 OSGi integration PoC
+===========================================
+
+Requirements:
+-------------
+- Java 7 and Maven 
+- Liferay Portal 7 m6
+
+To compile:
+-----------
+
+~~~
+mvn package
+~~~
+
+Deploy:
+-----------
+
+~~~
+cp distribution/target/com.liferay.vaadin7.distribution-<version>.lpkg -d <replace-this-to-your-liferay7-home>/deploy 
+~~~
+

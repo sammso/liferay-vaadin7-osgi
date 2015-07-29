@@ -1,0 +1,20 @@
+<assembly>
+    <id>bin</id>
+    <!-- Specifies that our binary distribution is a zip package -->
+    <formats>
+        <format>zip</format>
+    </formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+    <!-- Adds the dependencies of our application to the lib directory -->
+    <dependencySets>
+        <dependencySet>
+            <!--
+                Project artifact is not copied under library directory since
+                it is added to the root directory of the zip package.
+            -->
+            <useProjectArtifact>false</useProjectArtifact>
+            <unpack>false</unpack>
+            <outputFileNameMapping>${artifact.groupId}.${artifact.artifactId}-${artifact.version}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
+        </dependencySet>
+    </dependencySets>
+</assembly>
