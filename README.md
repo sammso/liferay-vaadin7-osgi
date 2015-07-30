@@ -16,7 +16,12 @@ mvn package
 Deploy:
 -----------
 
+portal-ext.properties
+
+~~~
+vaadin.resources.path=/o/vaadin7
+~~~
+
 ~~~
 cp distribution/target/com.liferay.vaadin7.distribution-<version>.lpkg -d <replace-this-to-your-liferay7-home>/deploy 
 ~~~
-
