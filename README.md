@@ -13,7 +13,7 @@ To compile:
 mvn package
 ~~~
 
-Deploy:
+Configure portal:
 -----------
 
 portal-ext.properties
@@ -21,6 +21,9 @@ portal-ext.properties
 ~~~
 vaadin.resources.path=/o/vaadin7
 ~~~
+
+Deploy:
+-----------
 
 ~~~
 cp distribution/target/com.liferay.vaadin7.distribution-<version>.lpkg -d <replace-this-to-your-liferay7-home>/deploy 
