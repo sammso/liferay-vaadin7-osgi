@@ -15,6 +15,17 @@
             <useProjectArtifact>false</useProjectArtifact>
             <unpack>false</unpack>
             <outputFileNameMapping>${artifact.groupId}.${artifact.artifactId}-${artifact.version}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
+        	<includes>
+        		<include>com.liferay.vaadin7:</include>
+        		<include>com.vaadin:vaadin-server:</include>
+        		<include>com.vaadin:vaadin-client-compiled:</include>
+        		<include>com.vaadin:vaadin-shared:</include>
+        		<include>com.vaadin:vaadin-themes:</include>
+        		<include>com.vaadin.external.google:</include>
+        		<include>com.vaadin.external.streamhtmlparser:streamhtmlparser-jsilver:</include>
+        		<include>org.jsoup:jsoup:</include>
+        		<include>com.vaadin.external.flute:flute:</include>
+        	</includes>
         </dependencySet>
     </dependencySets>
 </assembly>
