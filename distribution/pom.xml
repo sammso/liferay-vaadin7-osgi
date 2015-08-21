@@ -83,7 +83,7 @@
 				<version>1.7</version>
 				<executions>
 					<execution>
-						<phase>install</phase>
+						<phase>package</phase>
 
 						<configuration>
 							<target>
