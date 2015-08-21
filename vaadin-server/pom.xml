@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.liferay.vaadin7</groupId>
 		<artifactId>osgi-poc</artifactId>
-	  	<version>7.5.1-SNAPSHOT</version>
+	  	<version>7.5.4-SNAPSHOT</version>
 	  	<relativePath>../</relativePath>
 	</parent>
 	<artifactId>vaadin-server</artifactId>

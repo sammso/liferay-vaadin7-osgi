@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.liferay.vaadin7</groupId>
 	<artifactId>osgi-poc</artifactId>
-	<version>7.5.1-SNAPSHOT</version>
+	<version>7.5.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<url>http://github.com/sammso/osgi-liferay-poc</url>
 	<description>Proof of consept containing Vaadin 7 and Liferay 7 with OSGi integration</description>
