@@ -16,7 +16,6 @@
 	<modules>
 		<module>osgi-web</module>
 		<module>poc-portlet</module>
-		<module>vaadin-server</module>
 		<module>distribution</module>
 	</modules>
 	<repositories>
