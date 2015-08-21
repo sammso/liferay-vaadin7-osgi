@@ -310,7 +310,7 @@
 							VAADIN.widgetsets;version="${vaadin.version}",
 							VAADIN.widgetsets.com.vaadin.DefaultWidgetSet;version="${vaadin.version}",
 							VAADIN.widgetsets.com.vaadin.DefaultWidgetSet.deferredjs;version="${vaadin.version}",
-							VAADIN.widgetsets.com.vaadin.DefaultWidgetSet.deferredjs.882CCE4376AC573275435717318889A3;version="${vaadin.version}"
+							VAADIN.widgetsets.com.vaadin.DefaultWidgetSet.deferredjs.A49674046D4D183A16E76052366C4AD7;version="${vaadin.version}"
 						</Import-Package>
 						<_dsannotations>*</_dsannotations>
 					</instructions>
