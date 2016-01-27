@@ -3,8 +3,8 @@ Liferay 7 / Vaadin 7.5 OSGi integration PoC
 
 Requirements:
 -------------
-- Java 7 and Maven 
-- Liferay Portal 7 m6
+- Java 8 and Maven 
+- Liferay Portal 7 (latest)
 
 To compile:
 -----------
@@ -18,8 +18,16 @@ Deploy:
 
 portal-ext.properties
 
+if you are using osgi-web to service resource directly from Vaadin bundles
+
 ~~~
 vaadin.resources.path=/o/vaadin7
+~~~
+
+if you are servicing Vaadin resources from resources bundle.
+
+~~~
+vaadin.resources.path=/o/vaadin761
 ~~~
 
 ~~~
