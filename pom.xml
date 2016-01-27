@@ -19,6 +19,7 @@
 		<module>osgi-web</module>
 		<module>poc-portlet</module>
 		<module>distribution</module>
+		<module>resources</module>
 	</modules>
 	<build>
 		<pluginManagement>

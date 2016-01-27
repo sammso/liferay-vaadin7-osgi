@@ -1,0 +1,8 @@
+Bundle-Name: ${project.name}
+Bundle-SymbolicName: ${project.groupId}.${project.artifactId}
+Bundle-Description: ${project.description}
+
+Include-Resource:\
+	META-INF/resources=target/generated-resources/META-INF/resources
+
+Web-ContextPath: /vaadin761
