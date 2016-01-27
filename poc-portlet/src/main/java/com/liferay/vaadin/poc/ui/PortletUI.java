@@ -63,29 +63,23 @@ public class PortletUI extends UI {
 
 		layout.addComponent(table);
 
-		addButton.addClickListener(new Button.ClickListener() {
-			public void buttonClick(ClickEvent event) {
-				notes.addBean(new Note(noteCounter++, new Date(), textField
-						.getValue()));
-			}
+		addButton.addClickListener((event) -> {
+			notes.addBean(new Note(noteCounter++, new Date(), textField
+					.getValue()));
 		});
 
-		removeButton.addClickListener(new Button.ClickListener() {
-			public void buttonClick(ClickEvent event) {
-				if (selectedNote != null) {
-					notes.removeItem(selectedNote);
-					selectedNote = null;
-				}
-				removeButton.setEnabled(selectedNote != null);
+		removeButton.addClickListener((event) -> {
+			if (selectedNote != null) {
+				notes.removeItem(selectedNote);
+				selectedNote = null;
 			}
+			removeButton.setEnabled(selectedNote != null);
 		});
 
 		// Handle selection change.
-		table.addValueChangeListener(new Property.ValueChangeListener() {
-			public void valueChange(ValueChangeEvent event) {
-				selectedNote = (Note) table.getValue();
-				removeButton.setEnabled(selectedNote != null);
-			}
+		table.addValueChangeListener((event) -> {
+			selectedNote = (Note) table.getValue();
+			removeButton.setEnabled(selectedNote != null);
 		});
 	}
 
