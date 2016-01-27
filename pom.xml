@@ -1,23 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.liferay.vaadin7</groupId>
 	<artifactId>osgi-poc</artifactId>
-	<version>7.5.4-SNAPSHOT</version>
+	<version>7.6.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<url>http://github.com/sammso/osgi-liferay-poc</url>
 	<description>Proof of consept containing Vaadin 7 and Liferay 7 with OSGi integration</description>
 	<properties>
-		<vaadin.version>7.5.4</vaadin.version>
-		<liferay.version>7.0.0-m6</liferay.version>
+		<vaadin.version>7.6.1</vaadin.version>
+		<liferay.version>7.0.0-b2</liferay.version>
 		<maven-assembly-plugin.version>2.5.5</maven-assembly-plugin.version>
 		<org.osgi.compendium.version>5.0.0</org.osgi.compendium.version>
 		<org.osgi.core.version>6.0.0</org.osgi.core.version>
+		<bnd.version>3.1.0</bnd.version>
 	</properties>
 	<modules>
 		<module>osgi-web</module>
 		<module>poc-portlet</module>
 		<module>distribution</module>
 	</modules>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.5</version>
+					<configuration>
+						<source>1.8</source>
+          				<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 	<repositories>
 		<repository>
 			<id>liferay-ce</id>
@@ -30,6 +47,6 @@
 			<id>liferay-plugin</id>
 			<url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
 		</pluginRepository>
-	</pluginRepositories>	
-	<name>Liferay 7 Vaadin 7.5 OSGI integration PoC</name>
+	</pluginRepositories>
+	<name>Liferay 7 Vaadin 7.6 OSGI integration PoC</name>
 </project>

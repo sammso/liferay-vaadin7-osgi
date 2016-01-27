@@ -4,12 +4,11 @@
 	<parent>
 		<groupId>com.liferay.vaadin7</groupId>
 		<artifactId>osgi-poc</artifactId>
-		<version>7.5.4-SNAPSHOT</version>
+		<version>7.6.1-SNAPSHOT</version>
 		<relativePath>../</relativePath>
 	</parent>
 	<artifactId>poc-portlet</artifactId>
 	<name>PoC Vaadin OSGi Portlet</name>
-	<packaging>bundle</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.osgi</groupId>
@@ -46,32 +45,23 @@
 		<finalName>${project.groupId}.${project.artifactId}.${project.version}</finalName>
 		<plugins>
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
+			    <groupId>biz.aQute.bnd</groupId>
+			    <artifactId>bnd-maven-plugin</artifactId>
+			    <version>${bnd.version}</version>
+			    <executions>
+			        <execution>
+			            <goals>
+			                <goal>bnd-process</goal>
+			            </goals>
+			        </execution>
+			    </executions>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
-				<version>2.5.4</version>
-				<extensions>true</extensions>
-				<configuration>
-					<instructions>
-						<Private-Package>com.vaadin.portlet,com.liferay.vaadin.ui</Private-Package>
-						<Import-Package>
-							javax.portlet;version="[2.0,3)",
-							javax.servlet;version="[2.5,4)",
-							com.vaadin.ui;version="[7.4.6,8)",
-							com.vaadin.server;version="[7.4.6,8)",
-							com.vaadin.annotations;version="[7.4.6,8)",
-							com.vaadin.data.util;version="[7.4.6,8)",
-							com.vaadin.data;version="[7.4.6,8)</Import-Package>
-						<_dsannotations>*</_dsannotations>s
-					</instructions>
-				</configuration>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <configuration>
+			        <useDefaultManifestFile>true</useDefaultManifestFile>
+			    </configuration>
 			</plugin>
 		</plugins>
 	</build>
