@@ -21,6 +21,7 @@
 		<module>distribution</module>
 		<module>resources</module>
 		<module>fragment-portlet</module>
+		<module>fragment-one</module>
 		<module>fragment-two</module>
 	</modules>
 	<build>
