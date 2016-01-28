@@ -9,6 +9,7 @@
 	</parent>
 	<artifactId>poc-portlet</artifactId>
 	<name>PoC Vaadin OSGi Portlet</name>
+	<description>Simple PoC portlet as proof of consept that Vaadin can work at Liferay 7 OSGi container</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.osgi</groupId>
