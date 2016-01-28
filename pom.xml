@@ -20,6 +20,7 @@
 		<module>poc-portlet</module>
 		<module>distribution</module>
 		<module>resources</module>
+		<module>fragment-portlet</module>
 	</modules>
 	<build>
 		<pluginManagement>
