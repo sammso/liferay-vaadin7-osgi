@@ -23,7 +23,7 @@ public class FragmentFactoryOne implements FragmentFactory {
 
 		clickedTimes.setValue("0");
 
-		verticalLayout.addComponent(new Button("Click me", (event) -> {
+		verticalLayout.addComponent(new Button("Fragment One Click me", (event) -> {
 			Notification.show("Thank you for clicking!");
 			String value = clickedTimes.getValue();
 
